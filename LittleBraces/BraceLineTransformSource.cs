@@ -27,7 +27,7 @@ namespace BraceLineShrinker
         /// Scale factor of brace lines. Expose for another extension to change it if needed.
         /// </summary>
         public static double BraceLineScale { get; set; }
-        public static Regex BraceMatchExpression = new Regex(@"^(((\{\s*)+)|((\}\s*)+)|((\{\s*)+(\}\s*)+));?$");
+        public static Regex BraceMatchExpression = new Regex(@"(^\s*(\{|\}|\};)*\s*$|^\s*$)");
         const string settingsFilename = @"BraceLineScale.txt";
 
         static BraceLineTransformSource()
