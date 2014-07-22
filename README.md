@@ -2,7 +2,7 @@
 Improves code readability by compressing lines that contain only curly braces. It is compatible with Visual Studio 2013.
 
 ### Get it now!
-[Download](http://github.com/owen2/little-braces/raw/master/Output/LittleBraces.vsix), and open. Visual Studio will do the rest.
+[Download](http://github.com/owen2/little-braces/raw/master/Output/TinyBraces.vsix), and open. Visual Studio will do the rest.
 
 ### Tweaking
 You can edit `BraceLineScale.txt` in the extension's install directory to change the compression amount. I'm considering integrating into Visual Studio's settings.
