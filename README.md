@@ -1,33 +1,19 @@
-## This is now a feature in productivity power tools for VS 2013. Use that instead.
+# Tiny Braces
+Improves code readability by compressing lines that contain only curly braces. It is compatible with Visual Studio 2013.
 
-[Get it here](http://blogs.msdn.com/b/visualstudio/archive/2014/05/23/announcing-update-to-productivity-power-tools-2013.aspx)
+### Get it now!
+[Download](http://github.com/owen2/little-braces/raw/master/Output/LittleBraces.vsix), and open. Visual Studio will do the rest.
 
-# Little Braces
-A Visual Studio editor extension that shrinks lines of C, C++ and C# code that contain only curly braces.
+### Tweaking
+You can edit `BraceLineScale.txt` in the extension's install directory to change the compression amount. I'm considering integrating into Visual Studio's settings.
 
-![](http://lukesdm.github.com/little-braces/media/screenshot1.png)
+### Removal
+You can remove this from the Extension Manager. A restart of VS is required.
 
-###Requirements
-Visual Studio 2013. 2012 and 2010 should also work, but is untested.
+### Alternatives
+This got lumped into Productivity Power Tools 2013. You can use that if you don't like this one. Or feel free to fork and add improvements.
 
-### Download/Installation
-[Download](http://github.com/lukesdm/little-braces/raw/master/Output/LittleBraces.vsix), then double-click/activate the VSIX file in Explorer.
-
-### Usage
-Once installed, the effect is enabled immediately. Note: lines containing only ```};``` are also shrunk, e.g. object initializers.
-
-By default, the lines are shrunk to 0.3x the standard size. If this isn't satisfactory, you can edit the 'BraceLineScale.txt' file in the extension's install directory - it contains just the scale factor as a decimal. Changes will be applied the next time Visual Studio is started.
-
-### Caveats
-* If line numbers are visible, they look a bit messy for the shrunken lines.
-* The same goes for breakpoints on those lines
-* As the lines are shrunken, selecting them is tricker.
-
-### Uninstallation
-In VS, open the Extension Manager, select Little Braces, then click uninstall. A restart of VS is required.
-
-### Development Info
-This is a very simple extension. There's just a single 69-line source file. It uses a LineTransformSource.
-
-### License
-Eclipse Public License v1.0. See [license text](http://github.com/lukesdm/little-braces/raw/master/License.txt) for details.
+### Credits
+Original version by lukesdm.
+Maintained by owen2. 
+Contributions from thierryseegers. 
