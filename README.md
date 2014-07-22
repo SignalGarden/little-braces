@@ -17,3 +17,6 @@ This got lumped into Productivity Power Tools 2013. You can use that if you don'
 Original version by lukesdm.
 Maintained by owen2. 
 Contributions from thierryseegers. 
+
+### Send me some Bitcoin
+1JpSCv9P78SuKPXfZw4VGnNq7Hm7KVthsY
