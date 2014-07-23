@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/owen2/little-braces.png?label=ready&title=Ready)](https://waffle.io/owen2/little-braces)
 # Tiny Braces
 Improves code readability by compressing lines that contain only curly braces. It is compatible with Visual Studio 2013.
 
