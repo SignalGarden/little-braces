@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="VSIXProject1.Owen Johnson.e39df898-1324-41f4-8511-b3e386f4d1d9" Version="1.1" Language="en-US" Publisher="Owen Johnson" />
-    <DisplayName>VSIXProject1</DisplayName>
+    <Identity Id="TinyBraces.Owen Johnson.e39df898-1324-41f4-8511-b3e386f4d1d9" Version="1.1" Language="en-US" Publisher="Owen Johnson" />
+    <DisplayName>TinyBraces</DisplayName>
     <Description xml:space="preserve">Improves code readability by compressing curly braces.</Description>
     <MoreInfo>https://github.com/owen2/little-braces</MoreInfo>
   </Metadata>
@@ -10,6 +10,9 @@
     <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
     <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
     <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Enterprise" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
