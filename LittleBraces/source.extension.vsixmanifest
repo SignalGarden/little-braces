@@ -12,6 +12,11 @@
         <Edition>Premium</Edition>
         <Edition>Pro</Edition>
       </VisualStudio>
+      <VisualStudio Version="13.0">
+        <Edition>Community</Edition>
+        <Edition>Professional</Edition>
+        <Edition>Enterprise</Edition>
+      </VisualStudio>
     </SupportedProducts>
     <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.5.1" />
   </Identifier>
