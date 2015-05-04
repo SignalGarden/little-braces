@@ -18,14 +18,13 @@ namespace BraceLineShrinker
     public class BraceLineTransformSource : ILineTransformSource
     {
         /// <summary>
-        /// Scale factor of brace lines. Expose for another extension to change it if needed.
+        /// Factor to scale lines to. 1.0 = 100%
         /// </summary>
         public static double BraceLineScale { get; set; } = .45;
+        /// <summary>
+        /// Expression used to decide if lines should be squished.
+        /// </summary>
         public static Regex BraceMatchExpression { get; set; } = new Regex(@"^\s*(\{|\};?|\s)*\s*$");
-
-        public LineTransform GetLineTransform(ITextViewLine line, double yPosition, ViewRelativePosition placement)
-        {
-            return BraceMatchExpression.IsMatch(line.Extent.GetText()) ? new LineTransform(BraceLineScale) : line.DefaultLineTransform;
-        }
+        public LineTransform GetLineTransform(ITextViewLine line, double yPosition, ViewRelativePosition placement) => BraceMatchExpression.IsMatch(line.Extent.GetText()) ? new LineTransform(BraceLineScale) : line.DefaultLineTransform;
     }
 }
