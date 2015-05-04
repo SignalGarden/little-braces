@@ -27,28 +27,13 @@ namespace BraceLineShrinker
         /// <summary>
         /// Scale factor of brace lines. Expose for another extension to change it if needed.
         /// </summary>
-        public static double BraceLineScale { get; set; }
+        public static double? BraceLineScale { get; set; }
         public static Regex BraceMatchExpression = new Regex(@"^\s*(\{|\};?|\s)*\s*$");
-        const string settingsFilename = @"BraceLineScale.txt";
-
-        static BraceLineTransformSource()
-        {
-            try
-            {
-                BraceLineScale = double.Parse(File.ReadAllText(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), settingsFilename)).Trim());
-                if (BraceLineScale <= 0 || BraceLineScale > 100 || double.IsNaN(BraceLineScale))
-                    throw new InvalidOperationException();
-            }
-            catch
-            {
-                BraceLineScale = 0.3;
-            }
-        }
 
         public LineTransform GetLineTransform(ITextViewLine line, double yPosition, ViewRelativePosition placement)
         {
             if (BraceMatchExpression.IsMatch(line.Extent.GetText()))
-                return new LineTransform(0, 0, BraceLineScale);
+                return new LineTransform(BraceLineScale ?? .45);
             return line.DefaultLineTransform;
         }
     }

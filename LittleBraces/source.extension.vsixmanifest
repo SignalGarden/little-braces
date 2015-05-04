@@ -3,7 +3,7 @@
   <Identifier Id="LittleBraces.LM.67ed03ce-ea46-4118-b2dc-68af87d6497b">
     <Name>Tiny Braces</Name>
     <Author>Owen Johnson</Author>
-    <Version>1.0</Version>
+    <Version>1.1</Version>
     <Description xml:space="preserve">Improves code readability by compressing curly braces.</Description>
     <Locale>1033</Locale>
     <SupportedProducts>
