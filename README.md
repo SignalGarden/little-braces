@@ -5,9 +5,6 @@ Improves code readability by compressing lines that contain only curly braces. I
 ### Get it now!
 [Download](http://github.com/owen2/little-braces/raw/master/Output/TinyBraces.vsix), and open. Visual Studio will do the rest.
 
-### Tweaking
-You can edit `BraceLineScale.txt` in the extension's install directory to change the compression amount. I'm considering integrating into Visual Studio's settings.
-
 ### Removal
 You can remove this from the Extension Manager. A restart of VS is required.
 
@@ -18,6 +15,3 @@ This got lumped into Productivity Power Tools 2013. You can use that if you don'
 Original version by lukesdm.
 Maintained by owen2. 
 Contributions from thierryseegers. 
-
-### Send me some Bitcoin
-1JpSCv9P78SuKPXfZw4VGnNq7Hm7KVthsY
